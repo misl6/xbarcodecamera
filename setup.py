@@ -7,8 +7,8 @@ from os import path
 
 here = path.abspath(path.dirname(__file__))
 
-filename = path.join(here, 'kivy_garden', 'flower', '_version.py')
-# change this                              ^^^^^^
+filename = path.join(here, 'kivy_garden', 'xbarcodecamera', '_version.py')
+
 locals = {}
 with open(filename, "rb") as fh:
     exec(compile(fh.read(), filename, 'exec'), globals(), locals)
@@ -17,12 +17,12 @@ __version__ = locals['__version__']
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
-URL = 'https://github.com/kivy-garden/flower'
+URL = 'https://github.com/kivy-garden/xbarcodecamera'
 
 setup(
-    name='kivy_garden.flower',
+    name='kivy_garden.xbarcodecamera',
     version=__version__,
-    description='A kivy garden flower demo.',
+    description='A crossplatform barcode camera widget',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url=URL,
